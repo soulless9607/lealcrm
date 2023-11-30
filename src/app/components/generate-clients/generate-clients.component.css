@@ -1,0 +1,11 @@
+button {
+    margin: 1rem;
+}
+.mb-3 {
+    margin: 1rem;
+}
+
+.error-message {
+    color: red;
+    margin-left: 1rem;
+}
