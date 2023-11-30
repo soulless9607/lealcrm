@@ -33,7 +33,7 @@ export class GenerateClientsComponent {
 
   constructor(private formBuilder: FormBuilder) {
     this.clientForm = this.formBuilder.group({
-      Name: ['', [Validators.required, Validators.pattern('^[a-zA-Z ]*$')]],
+      Name: ['', [Validators.required, Validators.pattern("^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ ]*$")]],
       Contact: ['', [Validators.minLength(10), Validators.pattern('^[0-9]*$')]],
       Address: ['', [Validators.minLength(5)]],
       Email: ['', [Validators.required, Validators.email, Validators.pattern('.+@.+')]],
